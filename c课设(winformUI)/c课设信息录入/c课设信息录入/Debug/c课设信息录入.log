@@ -1,0 +1,9 @@
+﻿  录入信息.cpp
+c:\william liu\c课设(winformui)\c课设信息录入\c课设信息录入\录入信息.cpp(5): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\william liu\c课设(winformui)\c课设信息录入\c课设信息录入\录入信息.cpp(17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\william liu\c课设(winformui)\c课设信息录入\c课设信息录入\录入信息.cpp(31): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+  c课设信息录入.vcxproj -> C:\william liu\c课设(winformUI)\c课设信息录入\Debug\c课设信息录入.dll
+  c课设信息录入.vcxproj -> C:\william liu\c课设(winformUI)\c课设信息录入\Debug\c课设信息录入.pdb (Partial PDB)
