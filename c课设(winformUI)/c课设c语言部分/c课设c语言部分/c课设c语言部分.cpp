@@ -1373,7 +1373,7 @@ void count3(ROOM_NODE*head)
 		fclose(fp);
 		return;
 	}
-	char month1[2],day1[2];//存放当年入住月数,天数 
+	char month1[2],month2[2],day1[2],day2[2];//存放当年入住月数,天数 
 	char time[5];//存放输入的年份 
 	fscanf(fp, "%s", time);//读入UI输入的年份信息
 	char time1[4],time2[4];//存放链表中入住和退房时间的年份 
@@ -1381,8 +1381,8 @@ void count3(ROOM_NODE*head)
 	ROOM_NODE *prt = head;
 	BI_NODE *pbi;
 	G_NODE *pg;
-	int d1;//退房当月天数 
-	float profit, month, rate,m1;//分别为当前房间营业额，入住总月数，入住率
+	int d1,d2;//退房入住当月天数 
+	float profit, month, rate,m1,m2;//分别为当前房间营业额，入住总月数，入住率
 	float sum_profit=0, sum_month=0,sum_rate=0,sum_room=0;//合计营业额，合计入住约束，总入住率，总房间数（用于计算总入住率）
 	if ((fp = fopen("结果.txt", "w+")) == NULL)
 	{
@@ -1412,20 +1412,34 @@ void count3(ROOM_NODE*head)
 				strncpy(day1, pg->tout + 8, 2);
 				m1 = atoi(month1);
 				d1 = atoi(day1);
-				if (strncmp(time, time1,4) == 0)//判断客人是否在给定年份内退房缴费 
+				strncpy(month2, pg->tin + 5, 2);
+				strncpy(day2, pg->tin + 8, 2);
+				m2 = atoi(month2);
+				d2 = atoi(day2);
+				if (strncmp(time, time1,4) <= 0&&strncmp(time,time2,4>=0))//判断客人是否在给定年份内退房缴费 
 				{
 					//符合时间范围，记录相应信息
 					profit += pg->rpay;
-					if(strncmp(time,time2,4)==0)//未跨年，当年入住 
+					if(strncmp(time,time2,4)==0&&strncmp(time,time1,4)==0)//当年入住和退房，直接用staymonth 
 					{
 					    month += pg->staymonth;
 					    rate += pg->staymonth / 12.0;
 				    }
-					    else//跨年，只取当月月数即可 
+					else if (strncmp(time,time2,4)>0&&strncmp(time,time1,4)<0)//给定年份在入住时间段内，一定住了一年
+					{
+						month += 12;
+					}
+					else if(strncmp(time, time1, 4) == 0)//入住于给定时间前，当年退房，统计退房日期月数
 					{
 						m1 += d1/30.5; 
 				    	month += m1;
 				    	rate += month/12.0;
+					}
+					else if (strncmp(time, time2, 4) == 0)//当年入住，退房于给定时间后，统计12-入住日期月数
+					{
+						m2 += d2 / 30.5;
+						month = month + 12 - m2;
+						rate += month / 12.0;
 					}
 				}
 				pg = pg->next;

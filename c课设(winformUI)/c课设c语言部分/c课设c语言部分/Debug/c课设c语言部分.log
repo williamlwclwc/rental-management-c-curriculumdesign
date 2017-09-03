@@ -242,10 +242,13 @@ c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1122): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1413): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1422): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1417): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1426): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1428): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1442): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1434): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1436): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1440): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1442): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1456): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1369): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1378): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -260,34 +263,38 @@ c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1412): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1454): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1462): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1415): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1416): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
 c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1468): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1492): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1499): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1476): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1526): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1482): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1506): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1513): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1540): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1527): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1541): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1689): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1675): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1703): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1689): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1676): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1690): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1677): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1691): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1678): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1692): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1679): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1693): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1680): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1694): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
-c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1699): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)\c课设c语言部分\c课设c语言部分\c课设c语言部分.cpp(1713): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
   c课设c语言部分.vcxproj -> C:\william liu\c课设(winformUI)\c课设c语言部分\Debug\c课设c语言部分.exe
   c课设c语言部分.vcxproj -> C:\william liu\c课设(winformUI)\c课设c语言部分\Debug\c课设c语言部分.pdb (Partial PDB)

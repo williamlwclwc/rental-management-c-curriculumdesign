@@ -1,29 +1,1 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# README #the project includes a UI, which was written in windowsform(c#), and the main program, which was written in language C.the newest version is beta1.0(in c课设 winformUI), basically meets all the demands of the curriculum design(you can see the requesting functions in the pdf document). the software is just an assignment that is designed to help rental problems.
