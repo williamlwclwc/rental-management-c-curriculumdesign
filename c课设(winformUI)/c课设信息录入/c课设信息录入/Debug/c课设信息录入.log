@@ -1,9 +1,47 @@
 ﻿  录入信息.cpp
-c:\william liu\c课设(winformui)\c课设信息录入\c课设信息录入\录入信息.cpp(5): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(5): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
-c:\william liu\c课设(winformui)\c课设信息录入\c课设信息录入\录入信息.cpp(17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(37): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
-c:\william liu\c课设(winformui)\c课设信息录入\c课设信息录入\录入信息.cpp(31): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
-  c课设信息录入.vcxproj -> C:\william liu\c课设(winformUI)\c课设信息录入\Debug\c课设信息录入.dll
-  c课设信息录入.vcxproj -> C:\william liu\c课设(winformUI)\c课设信息录入\Debug\c课设信息录入.pdb (Partial PDB)
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(66): warning C4477: “fprintf”: 格式字符串“%f”需要类型“double”的参数，但可变参数 1 拥有了类型“int”
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(106): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(92): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(93): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(94): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(95): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(96): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(97): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(113): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(127): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(136): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(139): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(140): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(141): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(142): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(143): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(144): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(145): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(146): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(161): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+c:\william liu\c课设(winformui)_bug\c课设信息录入\c课设信息录入\录入信息.cpp(166): warning C4244: “return”: 从“int”转换到“float”，可能丢失数据
+  c课设信息录入.vcxproj -> C:\william liu\c课设(winformUI)_bug\c课设信息录入\Debug\c课设信息录入.dll
+  c课设信息录入.vcxproj -> C:\william liu\c课设(winformUI)_bug\c课设信息录入\Debug\c课设信息录入.pdb (Partial PDB)

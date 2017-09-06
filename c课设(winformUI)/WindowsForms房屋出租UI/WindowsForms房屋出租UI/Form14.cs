@@ -14,8 +14,10 @@ namespace WindowsForms房屋出租UI
 {
     public partial class Form14 : Form
     {
-        [DllImport("c课设信息录入.dll", EntryPoint = "?Guest_add@@YAXPAD0000MMMM@Z", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
-        public extern static void Guest_add(string id, string name, string room_no, string tin, string tout, float staymonth, float deposit, float tpay, float rpay);
+        [DllImport("c课设信息录入.dll", EntryPoint = "?Guest_add@@YAXPAD0000MMM@Z", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        public extern static void Guest_add(string id, string name, string room_no, string tin, string tout, float deposit, float tpay, float rpay);
+        [DllImport("c课设信息录入.dll", EntryPoint = "?c_month@@YAMPAD0@Z", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        public extern static float C_month(string tin,string tout);
         public Form14()
         {
             InitializeComponent();
@@ -64,12 +66,41 @@ namespace WindowsForms房屋出租UI
                 }
                 float staymonth = Convert.ToSingle(textBox6.Text);
                 float deposit = Convert.ToSingle(textBox7.Text);
-                float tpay = Convert.ToSingle(textBox8.Text);
+                float tpay = 0;
+                if (textBox8.Text != "")
+                {
+                    tpay = Convert.ToSingle(textBox8.Text);
+                }
                 float rpay = Convert.ToSingle(textBox9.Text);
-                Guest_add(id, name, room_no, tin, tout, staymonth, deposit, tpay, rpay);
+                Guest_add(id, name, room_no, tin, tout, deposit, tpay, rpay);
                 MessageBox.Show("录入完成", "客人租房信息");
                 Close();//录入后关闭窗口
             }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox5.Text.Length >=15)
+            {
+                float x = C_month(textBox4.Text, textBox5.Text);
+                x = (float)Math.Round(x, 1);
+                textBox6.Text = Convert.ToString(x);
+            }
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

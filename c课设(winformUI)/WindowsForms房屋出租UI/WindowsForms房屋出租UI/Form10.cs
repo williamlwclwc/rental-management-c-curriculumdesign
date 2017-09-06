@@ -14,8 +14,8 @@ namespace WindowsForms房屋出租UI
 {
     public partial class Form10 : Form
     {
-        [DllImport("c课设信息录入.dll", EntryPoint = "?Basic_add@@YAXPAD0DMMDD@Z", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
-        public extern static void Basic_add(string room_no, string tel, char rt, float s, float rent, char balcony, char occupied);
+        [DllImport("c课设信息录入.dll", EntryPoint = "?Basic_add@@YAXPADDMMDD@Z", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        public extern static void Basic_add(string room_no, char rt, float s, float rent, char balcony, char occupied);
         public Form10()
         {
             InitializeComponent();
@@ -59,14 +59,14 @@ namespace WindowsForms房屋出租UI
                 textBox1.Text = "";
                 comboBox2.Text = "";
                 comboBox1.Text = "";*/
+
                 string room_no = textBox5.Text;
-                string tel = textBox4.Text;
                 char rt = Convert.ToChar(comboBox3.Text);
                 float s = Convert.ToSingle(textBox2.Text);
                 float rent = Convert.ToSingle(textBox1.Text);
                 char balcony = Convert.ToChar(comboBox2.Text);
                 char occupied = Convert.ToChar(comboBox1.Text);
-                Basic_add(room_no, tel, rt, s, rent, balcony, occupied);
+                Basic_add(room_no, rt, s, rent, balcony, occupied);
                 MessageBox.Show("录入完成", "客房基本信息");
                 Close();//录入后关闭窗口
             }
@@ -84,7 +84,7 @@ namespace WindowsForms房屋出租UI
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
+            textBox4.Text = "8" + textBox5.Text;
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
