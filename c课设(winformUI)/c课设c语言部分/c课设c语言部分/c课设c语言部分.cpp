@@ -780,8 +780,8 @@ void basic_search_rn(ROOM_NODE *head)
 				fprintf(fp, "客房编号：%s\n", cbi->room_no);
 				fprintf(fp, "电话号码：%s\n", cbi->tel);
 				fprintf(fp, "客房类别：%c\n", cbi->rtype);
-				fprintf(fp, "客房面积：%f\n", cbi->S);
-				fprintf(fp, "每月租金：%f\n", cbi->rent);
+				fprintf(fp, "客房面积：%.1f\n", cbi->S);
+				fprintf(fp, "每月租金：%.1f\n", cbi->rent);
 				if (cbi->balcony == '1')
 				{
 					strcpy(balcony,"有阳台");
@@ -853,8 +853,8 @@ void basic_search_tr(ROOM_NODE *head)
 				fprintf(fp, "客房编号：%s\n", cbi->room_no);
 				fprintf(fp, "电话号码：%s\n", cbi->tel);
 				fprintf(fp, "客房类别：%c\n", cbi->rtype);
-				fprintf(fp, "客房面积：%f\n", cbi->S);
-				fprintf(fp, "每月租金：%f\n", cbi->rent);
+				fprintf(fp, "客房面积：%.1f\n", cbi->S);
+				fprintf(fp, "每月租金：%.1f\n", cbi->rent);
 				if (cbi->balcony == '1')
 				{
 					strcpy(balcony, "有阳台");
@@ -927,10 +927,10 @@ void g_search_id(ROOM_NODE *head)
 					{
 						fprintf(fp, "退房时间：%s\n", cg->tout);
 					}
-					fprintf(fp, "入住月数：%f\n", cg->staymonth);
-					fprintf(fp, "押金：%f\n", cg->deposit);
-					fprintf(fp, "应缴费用：%f\n", cg->tpay);
-					fprintf(fp, "实缴费用：%f\n", cg->rpay);
+					fprintf(fp, "入住月数：%.1f\n", cg->staymonth);
+					fprintf(fp, "押金：%.1f\n", cg->deposit);
+					fprintf(fp, "应缴费用：%.1f\n", cg->tpay);
+					fprintf(fp, "实缴费用：%.1f\n", cg->rpay);
 				}
 				cg = cg->next;
 			}
@@ -990,10 +990,10 @@ void g_search_nt(ROOM_NODE *head)
 					{
 						fprintf(fp, "退房时间：%s\n", cg->tout);
 					}
-					fprintf(fp, "入住月数：%f\n", cg->staymonth);
-					fprintf(fp, "押金：%f\n", cg->deposit);
-					fprintf(fp, "应缴费用：%f\n", cg->tpay);
-					fprintf(fp, "实缴费用：%f\n", cg->rpay);
+					fprintf(fp, "入住月数：%.1f\n", cg->staymonth);
+					fprintf(fp, "押金：%.1f\n", cg->deposit);
+					fprintf(fp, "应缴费用：%.1f\n", cg->tpay);
+					fprintf(fp, "实缴费用：%.1f\n", cg->rpay);
 				}
 				cg = cg->next;
 			}
@@ -1016,6 +1016,7 @@ void count1(ROOM_NODE*head)
 		fclose(fp);
 		return;
 	}
+	fprintf(fp, "%s\t%s\t%s\t%s\n", "客房类别", "客房总数", "已入住书", "未入住数");
 	//循环遍历链表，统计各房间类别 
 	while (prt != NULL)
 	{
@@ -1416,7 +1417,7 @@ void count3(ROOM_NODE*head)
 				strncpy(day2, pg->tin + 8, 2);
 				m2 = atoi(month2);
 				d2 = atoi(day2);
-				if (strncmp(time, time1,4) <= 0&&strncmp(time,time2,4>=0))//判断客人是否在给定年份内退房缴费 
+				if (strncmp(time, time1,4) <= 0&&strncmp(time,time2,4) >=0)//判断客人是否在给定年份内退房缴费 
 				{
 					//符合时间范围，记录相应信息
 					profit += pg->rpay;
@@ -1527,7 +1528,7 @@ C_NODE *count_list(ROOM_NODE *hd)
 			{
 				if (strcmp(pg->tin,time)<=0)//截止至time时间，客人出租过房或在住
 				{
-					if (strcmp(pg->tout,time)<=0)//退房时间在time之前，直接使用staymonth
+					if (strcmp(pg->tout,time)<=0 && strcmp(pg->tout, "0") != 0)//退房时间在time之前，直接使用staymonth
 					{
 						staymonth = pg->staymonth;
 					}
@@ -1740,7 +1741,7 @@ void count5(ROOM_NODE*head)
 		}
 		prt = prt->next;
 	}
-	fprintf(fp, "\n总未缴纳金额：%f元\n", sum);
+	fprintf(fp, "\n总未缴纳金额：%.1f元\n", sum);
 	fclose(fp);
 }
 
