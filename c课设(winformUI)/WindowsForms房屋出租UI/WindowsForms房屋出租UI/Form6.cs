@@ -66,13 +66,20 @@ namespace WindowsForms房屋出租UI
             this.textBox4.Text = "";*/
             if (MessageBox.Show("确定要录入信息吗？", "录入操作确认", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
             {
-                //点击ok录入信息
-                char rt = Convert.ToChar(comboBox1.Text);
-                int suite_no = Convert.ToInt32(textBox3.Text);
-                int rfree = Convert.ToInt32(textBox4.Text);
-                Rtype_add(rt, suite_no, rfree);
-                MessageBox.Show("录入完成", "客房类别信息");
-                Close();//存储完毕后关闭窗口
+                if (textBox3.Text != "" && textBox4.Text != "" && comboBox1.Text != "")
+                {
+                    //点击ok录入信息
+                    char rt = Convert.ToChar(comboBox1.Text);
+                    int suite_no = Convert.ToInt32(textBox3.Text);
+                    int rfree = Convert.ToInt32(textBox4.Text);
+                    Rtype_add(rt, suite_no, rfree);
+                    MessageBox.Show("录入完成", "客房类别信息");
+                    Close();//存储完毕后关闭窗口
+                }
+                else
+                {
+                    MessageBox.Show("录入信息不能为空", "录入失败");
+                }
             }
         }
 
@@ -82,6 +89,11 @@ namespace WindowsForms房屋出租UI
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -86,7 +86,7 @@ EX_API void Guest_add(char*id, char*name, char*room_no, char*tin, char*tout, flo
 EX_API float c_month(char*tstart, char*tend)
 {
 	float result;
-	char year1[4], year2[4], month1[2], month2[2], day1[2], day2[2];
+	char year1[5] = { 0 }, year2[5] = { 0 }, month1[3] = { 0 }, month2[3] = { 0 }, day1[3] = { 0 }, day2[3] = { 0 };
 	int y1, y2, m1, m2, d1, d2;
 	//分别取出字符串形式中的年月日
 	strncpy(year1, tstart, 4);

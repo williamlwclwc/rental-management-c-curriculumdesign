@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form22));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(166, 158);
+            this.button1.Location = new System.Drawing.Point(249, 219);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 44);
+            this.button1.Size = new System.Drawing.Size(237, 61);
             this.button1.TabIndex = 1;
             this.button1.Text = "开始统计";
             this.button1.UseVisualStyleBackColor = true;
@@ -44,9 +46,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(166, 230);
+            this.button2.Location = new System.Drawing.Point(249, 318);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 44);
+            this.button2.Size = new System.Drawing.Size(237, 61);
             this.button2.TabIndex = 2;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
@@ -54,12 +57,14 @@
             // 
             // Form22
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(507, 306);
+            this.ClientSize = new System.Drawing.Size(760, 424);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form22";
             this.Text = "统计欠费情况";
             this.ResumeLayout(false);

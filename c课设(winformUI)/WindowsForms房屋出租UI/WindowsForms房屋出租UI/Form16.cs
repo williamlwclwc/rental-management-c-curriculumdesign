@@ -30,33 +30,40 @@ namespace WindowsForms房屋出租UI
         {
             if (MessageBox.Show("确定要删除信息吗？", "删除操作确认", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
             {
-                //将用户输入参数写入文件
-                StreamWriter sw = new StreamWriter("函数参数.txt");
-                sw.Write(textBox1.Text);
-                sw.Dispose();
-                this.textBox1.Text = "";
-                //调用c语言程序处理
-                Process myProcess = new Process();
-
-                string fileName = @"c课设c语言部分.exe";
-
-                ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(fileName, "4");
-
-                myProcess.StartInfo = myProcessStartInfo;
-
-                myProcess.Start();
-
-                while (!myProcess.HasExited)
-
+                if (textBox1.Text != "")
                 {
+                    //将用户输入参数写入文件
+                    StreamWriter sw = new StreamWriter("函数参数.txt");
+                    sw.Write(textBox1.Text);
+                    sw.Dispose();
+                    this.textBox1.Text = "";
+                    //调用c语言程序处理
+                    Process myProcess = new Process();
 
-                    myProcess.WaitForExit();
+                    string fileName = @"c课设c语言部分.exe";
 
+                    ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(fileName, "4");
+
+                    myProcess.StartInfo = myProcessStartInfo;
+
+                    myProcess.Start();
+
+                    while (!myProcess.HasExited)
+
+                    {
+
+                        myProcess.WaitForExit();
+
+                    }
+
+                    int returnValue = myProcess.ExitCode;
+                    MessageBox.Show("删除完成", "客人租房信息");
+                    Close();
                 }
-
-                int returnValue = myProcess.ExitCode;
-                MessageBox.Show("删除完成", "客人租房信息");
-                Close();
+                else
+                {
+                    MessageBox.Show("请检查删除参数是否输入正确", "删除失败");
+                }
             }
         }
     }

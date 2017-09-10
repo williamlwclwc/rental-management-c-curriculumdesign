@@ -55,26 +55,41 @@ namespace WindowsForms房屋出租UI
                 textBox7.Text = "";
                 textBox8.Text = "";
                 textBox9.Text = "";*/
-                string id = textBox1.Text;
-                string name = textBox2.Text;
-                string room_no = textBox3.Text;
-                string tin = textBox4.Text;
-                string tout = textBox5.Text;
-                if(tout=="")
+                if (textBox2.Text.Length >= 20 || textBox1.Text.Length >= 20 || textBox3.Text.Length > 3 )
                 {
-                    tout = "0";
+                    MessageBox.Show("身份证号或姓名或房间号过长", "录入失败");
                 }
-                float staymonth = Convert.ToSingle(textBox6.Text);
-                float deposit = Convert.ToSingle(textBox7.Text);
-                float tpay = 0;
-                if (textBox8.Text != "")
+                else if(textBox4.Text.Length >= 18 || textBox5.Text.Length >= 18)
                 {
-                    tpay = Convert.ToSingle(textBox8.Text);
+                    MessageBox.Show("入住时间或退房时间格式不正确", "录入失败");
                 }
-                float rpay = Convert.ToSingle(textBox9.Text);
-                Guest_add(id, name, room_no, tin, tout, deposit, tpay, rpay);
-                MessageBox.Show("录入完成", "客人租房信息");
-                Close();//录入后关闭窗口
+                else if(textBox2.Text == "" || textBox1.Text == "" || textBox3.Text == "" || textBox4.Text == ""  || textBox6.Text == "" || textBox7.Text == "" || textBox9.Text == "")
+                {
+                    MessageBox.Show("除退房时间、应缴费用外均不能为空", "录入失败");
+                }
+                else
+                {
+                    string id = textBox1.Text;
+                    string name = textBox2.Text;
+                    string room_no = textBox3.Text;
+                    string tin = textBox4.Text;
+                    string tout = textBox5.Text;
+                    if (tout == "")
+                    {
+                        tout = "0";
+                    }
+                    float staymonth = Convert.ToSingle(textBox6.Text);
+                    float deposit = Convert.ToSingle(textBox7.Text);
+                    float tpay = 0;
+                    if (textBox8.Text != "")
+                    {
+                        tpay = Convert.ToSingle(textBox8.Text);
+                    }
+                    float rpay = Convert.ToSingle(textBox9.Text);
+                    Guest_add(id, name, room_no, tin, tout, deposit, tpay, rpay);
+                    MessageBox.Show("录入完成", "客人租房信息");
+                    Close();//录入后关闭窗口
+                }
             }
         }
 
@@ -90,7 +105,7 @@ namespace WindowsForms房屋出租UI
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            if (textBox5.Text.Length >=15)
+            if (textBox5.Text.Length >=10)
             {
                 float x = C_month(textBox4.Text, textBox5.Text);
                 x = (float)Math.Round(x, 1);

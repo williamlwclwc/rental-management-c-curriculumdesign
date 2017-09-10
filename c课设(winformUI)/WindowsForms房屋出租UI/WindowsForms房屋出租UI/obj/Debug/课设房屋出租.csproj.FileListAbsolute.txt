@@ -1,6 +1,3 @@
-C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\WindowsForms房屋出租UI.exe.config
-C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\WindowsForms房屋出租UI.exe
-C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\WindowsForms房屋出租UI.pdb
 C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\课设房屋出租.csprojResolveAssemblyReference.cache
 C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.Form1.resources
 C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.Form10.resources
@@ -31,8 +28,6 @@ C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋�
 C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.Form9.resources
 C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.Properties.Resources.resources
 C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\课设房屋出租.csproj.GenerateResource.Cache
-C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.exe
-C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.pdb
 C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\WindowsForms房屋出租UI.exe.config
 C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\WindowsForms房屋出租UI.exe
 C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\WindowsForms房屋出租UI.pdb
@@ -68,3 +63,8 @@ C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房
 C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\课设房屋出租.csproj.GenerateResource.Cache
 C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.exe
 C:\william liu\c课设(winformUI)_bug\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\WindowsForms房屋出租UI.pdb
+C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\C课设_房屋出租系统.exe.config
+C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\C课设_房屋出租系统.exe
+C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\bin\Debug\C课设_房屋出租系统.pdb
+C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\C课设_房屋出租系统.exe
+C:\william liu\c课设(winformUI)\WindowsForms房屋出租UI\WindowsForms房屋出租UI\obj\Debug\C课设_房屋出租系统.pdb

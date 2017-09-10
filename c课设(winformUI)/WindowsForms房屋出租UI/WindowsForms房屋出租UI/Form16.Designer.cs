@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form16));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,24 +38,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 72);
+            this.label1.Location = new System.Drawing.Point(75, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 13);
+            this.label1.Size = new System.Drawing.Size(260, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "要删除信息的客人的身份证号：";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(244, 69);
+            this.textBox1.Location = new System.Drawing.Point(366, 96);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
+            this.textBox1.Size = new System.Drawing.Size(250, 28);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(72, 218);
+            this.button1.Location = new System.Drawing.Point(108, 302);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 44);
+            this.button1.Size = new System.Drawing.Size(174, 61);
             this.button1.TabIndex = 2;
             this.button1.Text = "确认删除";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,9 +66,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(311, 218);
+            this.button2.Location = new System.Drawing.Point(466, 302);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 44);
+            this.button2.Size = new System.Drawing.Size(174, 61);
             this.button2.TabIndex = 3;
             this.button2.Text = "取消返回";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,14 +77,16 @@
             // 
             // Form16
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(507, 306);
+            this.ClientSize = new System.Drawing.Size(760, 424);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form16";
             this.Text = "删除客人租房信息";
             this.ResumeLayout(false);

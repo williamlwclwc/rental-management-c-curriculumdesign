@@ -275,14 +275,17 @@ void type_printtodoc(ROOM_NODE *phead)
 	//打开目标文件 
 	fp = fopen("客房类别信息.txt", "w+");
 	//遍历链表，输出相关信息至指定文件 
-	do
+	if (phead != NULL) 
 	{
-		fprintf(fp, "%c", phead->rtype);
-		fprintf(fp, "%d ", phead->max);
-		fprintf(fp, "%d ", phead->suite_no);
-		fprintf(fp, "%d", phead->rfree);
-		phead = phead->next;
-	} while (phead != NULL);
+		do
+		{
+			fprintf(fp, "%c", phead->rtype);
+			fprintf(fp, "%d ", phead->max);
+			fprintf(fp, "%d ", phead->suite_no);
+			fprintf(fp, "%d", phead->rfree);
+			phead = phead->next;
+		} while (phead != NULL);
+	}
 	fclose(fp);
 }
 
@@ -568,6 +571,7 @@ void guest_printtodoc(ROOM_NODE *phead)
 		}
 		prt = prt->next;
 	}
+	fclose(fp);
 }
 
 //删除客人租房信息链表
@@ -715,18 +719,6 @@ void type_search(ROOM_NODE *head)
 	//读取文件中参数
 	fscanf(fp, "%c", &rt);
 	fclose(fp);
-	//找到对应的结点 
-	while (current->rtype != rt)
-	{
-		if (current->next == NULL)
-		{
-			return;
-		}
-		else
-		{
-			current = current->next;
-		}
-	}
 	if ((fp = fopen("结果.txt", "w+")) == NULL)
 	{
 		printf("没有找到文件\n");
@@ -734,11 +726,24 @@ void type_search(ROOM_NODE *head)
 		fclose(fp);
 		return;
 	}
+	//找到对应的结点 
+	while (current->rtype != rt)
+	{
+		if (current->next == NULL)
+		{
+			fprintf(fp, "未能查询到相关信息\n");
+			return;
+		}
+		else
+		{
+			current = current->next;
+		}
+	}
 	//向结果文件中输出查询结果信息 
 	fprintf(fp, "客房类别：%c\n", current->rtype);
 	fprintf(fp, "最多入住人数：%d\n", current->max);
 	fprintf(fp, "客房套数：%d\n", current->suite_no);
-	fprintf(fp, "客房未入住人数%d\n", current->rfree);
+	fprintf(fp, "客房未住套数：%d\n", current->rfree);
 	fclose(fp);
 }
 //以上为：客房类别查询 
@@ -756,6 +761,7 @@ void basic_search_rn(ROOM_NODE *head)
 	char room_no[20];
 	char balcony[10];
 	char occupied[20];
+	int flag = 0;
 	//读取文件中参数
 	fscanf(fp, "%s", room_no);
 	fclose(fp);
@@ -769,6 +775,7 @@ void basic_search_rn(ROOM_NODE *head)
 		{
 			if (strcmp(room_no, cbi->room_no) == 0)
 			{
+				flag = 1;
 				//向结果文件中输出查询结果 
 				if ((fp = fopen("结果.txt", "w+")) == NULL)
 				{
@@ -807,6 +814,18 @@ void basic_search_rn(ROOM_NODE *head)
 		}
 		crt = crt->next;
 	}
+	if (flag == 0)
+	{
+		if ((fp = fopen("结果.txt", "w+")) == NULL)
+		{
+			printf("没有输入参数\n");
+			_getch();
+			fclose(fp);
+			return;
+		}
+		fprintf(fp, "未查询到相关信息\n");
+		fclose(fp);
+	}
 }
 
 //客房基本信息查询：按类别、租金 
@@ -829,6 +848,7 @@ void basic_search_tr(ROOM_NODE *head)
 	fclose(fp);
 	ROOM_NODE *crt = head;
 	BI_NODE *cbi;
+	int flag = 0;
 	//循环遍历链表，并将查询结果输出到结果文件 
 	if ((fp = fopen("结果.txt", "w+")) == NULL)
 	{
@@ -850,6 +870,7 @@ void basic_search_tr(ROOM_NODE *head)
 		{
 			if (rent==cbi->rent)
 			{
+				flag = 1;
 				fprintf(fp, "客房编号：%s\n", cbi->room_no);
 				fprintf(fp, "电话号码：%s\n", cbi->tel);
 				fprintf(fp, "客房类别：%c\n", cbi->rtype);
@@ -878,6 +899,10 @@ void basic_search_tr(ROOM_NODE *head)
 		}
 		crt = crt->next;
 	}
+	if (flag == 0)
+	{
+		fprintf(fp, "未能查询到相关信息\n");
+	}
 	fclose(fp);
 }
 //以上为：客房基本信息查询 
@@ -904,6 +929,7 @@ void g_search_id(ROOM_NODE *head)
 	    fclose(fp);
 		return;
 	}
+	int flag = 0;
 	//循环链表，并将结果输出至结果文件 
 	while (crt != NULL)
 	{
@@ -915,6 +941,7 @@ void g_search_id(ROOM_NODE *head)
 			{
 				if (strcmp(id, cg->id) == 0)
 				{
+					flag = 1;
 					fprintf(fp, "身份证号：%s\n", cg->id);
 					fprintf(fp, "姓名：%s\n", cg->name);
 					fprintf(fp, "所租房房间号：%s\n", cg->room_no);
@@ -937,6 +964,10 @@ void g_search_id(ROOM_NODE *head)
 			cbi = cbi->next;
 		}
 		crt = crt->next;
+	}
+	if (flag == 0)
+	{
+		fprintf(fp, "未能查询到相关信息\n");
 	}
 	fclose(fp);
 }
@@ -968,6 +999,7 @@ void g_search_nt(ROOM_NODE *head)
 		fclose(fp);
 		return;
 	}
+	int flag = 0;
 	while (crt != NULL)
 	{
 		cbi = crt->snext;
@@ -978,6 +1010,7 @@ void g_search_nt(ROOM_NODE *head)
 			{
 				if ((strstr(cg->name, name) != NULL)&&(strcmp(cg->tin,start)>=0)&&(strcmp(cg->tin,end)<=0))
 				{
+					flag = 1;
 					fprintf(fp, "身份证号：%s\n", cg->id);
 					fprintf(fp, "姓名：%s\n", cg->name);
 					fprintf(fp, "所租房房间号：%s\n", cg->room_no);
@@ -1001,6 +1034,10 @@ void g_search_nt(ROOM_NODE *head)
 		}
 		crt = crt->next;
 	}
+	if (flag == 0)
+	{
+		fprintf(fp, "未能查询到相关信息\n");
+	}
 	fclose(fp);
 }
 //以上为：客人租房信息查询
@@ -1016,7 +1053,7 @@ void count1(ROOM_NODE*head)
 		fclose(fp);
 		return;
 	}
-	fprintf(fp, "%s\t%s\t%s\t%s\n", "客房类别", "客房总数", "已入住书", "未入住数");
+	fprintf(fp, "%s\t%s\t%s\t%s\n", "客房类别", "客房总数", "已入住数", "未入住数");
 	//循环遍历链表，统计各房间类别 
 	while (prt != NULL)
 	{
@@ -1528,11 +1565,11 @@ C_NODE *count_list(ROOM_NODE *hd)
 			{
 				if (strcmp(pg->tin,time)<=0)//截止至time时间，客人出租过房或在住
 				{
-					if (strcmp(pg->tout,time)<=0 && strcmp(pg->tout, "0") != 0)//退房时间在time之前，直接使用staymonth
+					if (strncmp(pg->tout, "0", 1) != 0 && strcmp(pg->tout, time) <= 0)//退房时间在time之前，直接使用staymonth
 					{
 						staymonth = pg->staymonth;
 					}
-					else if (strcmp(pg->tout,time)>0||strcmp(pg->tout,"0")==0)//退房时间在time之后或在住，计算入住月数staymonth
+					else if (strcmp(pg->tout,time)>0 || strncmp(pg->tout,"0",1) == 0)//退房时间在time之后或在住，计算入住月数staymonth
 					{
 						staymonth = c_month(pg->tin, time);
 					}
@@ -1553,10 +1590,13 @@ C_NODE *count_list(ROOM_NODE *hd)
 		prt = prt->next;
 	}
 	//对新链表按入住月数排序
-	sort_list_id(pcr);
-	fusion_list(pcr);
-	sort_list(pcr);
-	return pcr;
+	if (pcr != NULL)
+	{
+		sort_list_id(pcr);
+		fusion_list(pcr);
+		sort_list(pcr);
+	}
+		return pcr;
 }
 
 //对链表排序（按入住时间）
@@ -1684,7 +1724,7 @@ void fusion_list(C_NODE *hd)
 float c_month(char*tstart, char*tend)
 {
 	float result;
-    char year1[4], year2[4], month1[2], month2[2], day1[2], day2[2];
+	char year1[5] = { 0 }, year2[5] = { 0 }, month1[3] = { 0 }, month2[3] = { 0 }, day1[3] = { 0 }, day2[3] = { 0 };
 	int y1, y2, m1, m2, d1, d2;
 	//分别取出字符串形式中的年月日
 	strncpy(year1, tstart, 4);

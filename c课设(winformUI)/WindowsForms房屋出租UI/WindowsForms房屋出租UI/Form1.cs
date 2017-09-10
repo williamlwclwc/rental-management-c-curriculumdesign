@@ -35,7 +35,7 @@ namespace WindowsForms房屋出租UI
             if (MessageBox.Show("确定退出系统吗？", "退出确认", MessageBoxButtons.OKCancel,MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
             {
                 //点击ok退出程序
-                Application.Exit();
+                Environment.Exit(0);
             }
 
         }

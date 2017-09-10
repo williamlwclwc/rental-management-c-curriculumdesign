@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,27 +42,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 73);
+            this.label1.Location = new System.Drawing.Point(122, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.Size = new System.Drawing.Size(170, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "要修改的客房类别：";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 112);
+            this.label2.Location = new System.Drawing.Point(122, 155);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.Size = new System.Drawing.Size(170, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "要修改的信息名称：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(81, 152);
+            this.label3.Location = new System.Drawing.Point(122, 210);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.Size = new System.Drawing.Size(152, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "要将该信息改为：";
             // 
@@ -74,9 +78,10 @@
             "S",
             "T",
             "F"});
-            this.comboBox1.Location = new System.Drawing.Point(210, 70);
+            this.comboBox1.Location = new System.Drawing.Point(315, 97);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(164, 21);
+            this.comboBox1.Size = new System.Drawing.Size(244, 26);
             this.comboBox1.TabIndex = 3;
             // 
             // comboBox2
@@ -88,23 +93,26 @@
             "最多入住人数",
             "客房套数",
             "客房未入住套数"});
-            this.comboBox2.Location = new System.Drawing.Point(210, 109);
+            this.comboBox2.Location = new System.Drawing.Point(315, 151);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(164, 21);
+            this.comboBox2.Size = new System.Drawing.Size(244, 26);
             this.comboBox2.TabIndex = 4;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(211, 149);
+            this.textBox1.Location = new System.Drawing.Point(316, 206);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 20);
+            this.textBox1.Size = new System.Drawing.Size(242, 28);
             this.textBox1.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(68, 226);
+            this.button1.Location = new System.Drawing.Point(102, 313);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 44);
+            this.button1.Size = new System.Drawing.Size(192, 61);
             this.button1.TabIndex = 6;
             this.button1.Text = "确定修改";
             this.button1.UseVisualStyleBackColor = true;
@@ -112,9 +120,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 226);
+            this.button2.Location = new System.Drawing.Point(472, 313);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 44);
+            this.button2.Size = new System.Drawing.Size(192, 61);
             this.button2.TabIndex = 7;
             this.button2.Text = "取消返回";
             this.button2.UseVisualStyleBackColor = true;
@@ -122,10 +131,10 @@
             // 
             // Form7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(507, 306);
+            this.ClientSize = new System.Drawing.Size(760, 424);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -134,6 +143,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form7";
             this.Text = "修改客房分类";
             this.ResumeLayout(false);

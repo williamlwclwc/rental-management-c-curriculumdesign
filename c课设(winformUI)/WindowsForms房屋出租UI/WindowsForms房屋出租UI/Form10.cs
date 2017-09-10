@@ -59,16 +59,26 @@ namespace WindowsForms房屋出租UI
                 textBox1.Text = "";
                 comboBox2.Text = "";
                 comboBox1.Text = "";*/
-
-                string room_no = textBox5.Text;
-                char rt = Convert.ToChar(comboBox3.Text);
-                float s = Convert.ToSingle(textBox2.Text);
-                float rent = Convert.ToSingle(textBox1.Text);
-                char balcony = Convert.ToChar(comboBox2.Text);
-                char occupied = Convert.ToChar(comboBox1.Text);
-                Basic_add(room_no, rt, s, rent, balcony, occupied);
-                MessageBox.Show("录入完成", "客房基本信息");
-                Close();//录入后关闭窗口
+                if (textBox5.Text.Length>3 || textBox5.Text == "")
+                {
+                    MessageBox.Show("客房编号未输入或超过三位数", "录入失败");
+                }
+                else if(comboBox3.Text == "" || textBox2.Text == "" || textBox1.Text == "" || comboBox2.Text == "" || comboBox1.Text == "")
+                {
+                    MessageBox.Show("录入信息不能为空", "录入失败");
+                }
+                else
+                {
+                    string room_no = textBox5.Text;
+                    char rt = Convert.ToChar(comboBox3.Text);
+                    float s = Convert.ToSingle(textBox2.Text);
+                    float rent = Convert.ToSingle(textBox1.Text);
+                    char balcony = Convert.ToChar(comboBox2.Text);
+                    char occupied = Convert.ToChar(comboBox1.Text);
+                    Basic_add(room_no, rt, s, rent, balcony, occupied);
+                    MessageBox.Show("录入完成", "客房基本信息");
+                    Close();//录入后关闭窗口
+                }
             }
         }
 
@@ -94,6 +104,11 @@ namespace WindowsForms房屋出租UI
 
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,9 +38,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 93);
+            this.label1.Location = new System.Drawing.Point(60, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 13);
+            this.label1.Size = new System.Drawing.Size(206, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "要删除信息的客房类别：";
             // 
@@ -52,17 +54,19 @@
             "S",
             "T",
             "F"});
-            this.comboBox1.Location = new System.Drawing.Point(192, 89);
+            this.comboBox1.Location = new System.Drawing.Point(288, 123);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 21);
+            this.comboBox1.Size = new System.Drawing.Size(301, 26);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(61, 220);
+            this.button1.Location = new System.Drawing.Point(92, 305);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 45);
+            this.button1.Size = new System.Drawing.Size(176, 62);
             this.button1.TabIndex = 2;
             this.button1.Text = "确认删除";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,9 +74,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(329, 220);
+            this.button2.Location = new System.Drawing.Point(494, 305);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 45);
+            this.button2.Size = new System.Drawing.Size(176, 62);
             this.button2.TabIndex = 3;
             this.button2.Text = "取消返回";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,14 +85,16 @@
             // 
             // Form8
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(507, 306);
+            this.ClientSize = new System.Drawing.Size(760, 424);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form8";
             this.Text = "删除客房分类";
             this.ResumeLayout(false);
