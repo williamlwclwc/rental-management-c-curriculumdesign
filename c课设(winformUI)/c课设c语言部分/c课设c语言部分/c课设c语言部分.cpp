@@ -957,7 +957,7 @@ void g_search_id(ROOM_NODE *head)
 					fprintf(fp, "入住月数：%.1f\n", cg->staymonth);
 					fprintf(fp, "押金：%.1f\n", cg->deposit);
 					fprintf(fp, "应缴费用：%.1f\n", cg->tpay);
-					fprintf(fp, "实缴费用：%.1f\n", cg->rpay);
+					fprintf(fp, "实缴费用：%.1f\n\n", cg->rpay);
 				}
 				cg = cg->next;
 			}
@@ -1026,7 +1026,7 @@ void g_search_nt(ROOM_NODE *head)
 					fprintf(fp, "入住月数：%.1f\n", cg->staymonth);
 					fprintf(fp, "押金：%.1f\n", cg->deposit);
 					fprintf(fp, "应缴费用：%.1f\n", cg->tpay);
-					fprintf(fp, "实缴费用：%.1f\n", cg->rpay);
+					fprintf(fp, "实缴费用：%.1f\n\n", cg->rpay);
 				}
 				cg = cg->next;
 			}
